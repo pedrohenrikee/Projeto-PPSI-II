@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Micro</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/components/header.js" defer></script>
+    <script src="./js/components/footer.js" defer></script>
 </head>
 <body>
-    
+    <header-component></header-component>
+    <main>
+        <section class="hero-banner">
+            <img src="/assets/hero-pc.png" alt="Computador de Alta Performance">
+        </section>
+
+        <section class="hero-section">
+            <h1>Bem-vindo à World Micro</h1>
+            <p>O futuro da tecnologia ao seu alcance, potencialize sua Experiência Digital.</p>
+            <p>Peças de alta performance e suporte técnico especializado com a transparência que você confia.</p>
+            <a href="./pages/store/store.html" class="aero-btn-sm">Explorar Loja</a>
+        </section>
+
+        <section class="highlights-section">
+            <h2>Hardware em Destaque</h2>
+            <div class="products-grid">
+                <div class="product-card aero-card">
+                    <span class="badge-eco">Novo</span>
+                    <img src="./assets/ram.jpg" alt="Memória DDR4 Kingston Fury Beast, RGB, 8GB, 3200MHz, Black, KF432C16BB2A/8">
+                    <h3>Memória DDR4 Kingston Fury Beast</h3>
+                    <p class="price">R$ 598,90</p>
+                    <button class="aero-btn-sm">Adicionar</button>
+                </div>
+
+                <div class="product-card aero-card">
+                    <span class="badge-eco">Novo</span>
+                    <img src="./assets/gpu.jpg" alt="Placa de Vídeo RTX 5090">
+                    <h3>Placa de Vídeo RTX 5090</h3>
+                    <p class="price">R$ 34.199,90</p>
+                    <button class="aero-btn-sm">Adicionar</button>
+                </div>
+
+                <div class="product-card aero-card">
+                    <span class="badge-eco">Novo</span>
+                    <img src="./assets/cpu.jpg" alt="Processador AMD Ryzen 7 9800X3D, 4.7GHz (5.2GHz Turbo), 8-Cores 16-Threads, AM5, Sem Cooler, 100-100001084WOF">
+                    <h3>Processador AMD Ryzen 7 9800X3D</h3>
+                    <p class="price">R$ 2.699,90</p>
+                    <button class="aero-btn-sm">Adicionar</button>
+                </div>
+
+                <div class="product-card aero-card">
+                    <span class="badge-eco">Novo</span>
+                    <img src="./assets/mobo.jpg" alt="Placa Mae Asus Prime X670-P, DDR5, Socket AM5, ATX, Chipset AMD X670, PRIME-X670-P">
+                    <h3>Placa Mãe Asus Prime X670-P</h3>
+                    <p class="price">R$ 2.339,99</p>
+                    <button class="aero-btn-sm">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <h2>Nossos Serviços Especializados</h2>
+            <div class="services-grid">
+                <div class="service-item aero-card">
+                    <span class="service-icon service-icon--clean"></span>
+                    <h3>Limpeza Avançada</h3>
+                    <p>Remoção de poeira e troca de pasta térmica para o seu PC rodar frio e silencioso.</p>
+                </div>
+                <div class="service-item aero-card">
+                    <span class="service-icon service-icon--upgrade"></span>
+                    <h3>Upgrades de Sistema</h3>
+                    <p>Instalação de SSDs e memórias para multiplicar a velocidade do seu computador.</p>
+                </div>
+                <div class="service-item aero-card">
+                    <span class="service-icon service-icon--repair"></span>
+                    <h3>Reparo de Hardware</h3>
+                    <p>Diagnóstico preciso e solda em componentes de placas com equipamentos de ponta.</p>
+                </div>
+            </div>
+            <div class="services-action">
+                <a href="./pages/service/service.html" class="aero-btn-sm">Ver todos os serviços →</a>
+            </div>
+        </section>
+
+        <section class="benefits-bar aero-card">
+            <div class="benefit">
+                <span class="benefit-icon benefit-icon--truck"></span>
+                <p>Envio Seguro e Rápido</p>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon benefit-icon--shield"></span>
+                <p>Serviços com Garantia</p>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon benefit-icon--diamond"></span>
+                <p>Peças 100% Originais</p>
+            </div>
+        </section>
+    </main>
+    <footer-component></footer-component>
 </body>
 </html>

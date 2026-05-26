@@ -1,4 +1,4 @@
-/* ── Store Page ────────────────────────────────────────────── */
+/* ── Página da Loja ────────────────────────────────────────── */
 
 .store-container {
     flex: 1;
@@ -23,39 +23,39 @@
     margin: 0 0 48px;
 }
 
-/* ── Category section ───────────────────────────────────────── */
+/* ── Seção de Categorias ───────────────────────────────────── */
 
 .store-container section {
     margin-bottom: 56px;
 }
 
-.section-header {
+.cabecalho-secao {
     margin-bottom: 18px;
 }
 
-.section-header h2 {
+.cabecalho-secao h2 {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--deep-ocean);
     margin: 0 0 4px;
 }
 
-.section-header p {
+.cabecalho-secao p {
     color: var(--text-muted);
     font-size: 0.9rem;
     margin: 0;
 }
 
-/* ── Carousel ──────────────────────────────────────────────── */
+/* ── Carrossel ──────────────────────────────────────────────── */
 
-.carousel-wrapper {
+.carrossel-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.products-carousel {
+.carrossel-produtos {
     display: flex;
     gap: 20px;
     overflow-x: hidden;
@@ -65,15 +65,15 @@
     padding: 16px 6px;
 }
 
-.products-carousel .product-card {
+.carrossel-produtos .product-card {
     flex: 0 0 220px;
     min-width: 220px;
     scroll-snap-align: start;
 }
 
-/* ── Carousel nav buttons ───────────────────────────────────── */
+/* ── Botões de Navegação do Carrossel ───────────────────────── */
 
-.carousel-btn {
+.btn-carrossel {
     flex-shrink: 0;
     width: 46px;
     height: 46px;
@@ -95,7 +95,7 @@
     user-select: none;
 }
 
-.carousel-btn:hover {
+.btn-carrossel:hover {
     background: linear-gradient(to bottom, #00c6ff 0%, #0072ff 100%);
     color: #fff;
     border-color: rgba(0, 114, 255, 0.4);
@@ -103,25 +103,25 @@
     transform: scale(1.08);
 }
 
-.carousel-btn:active {
+.btn-carrossel:active {
     transform: scale(0.97);
     box-shadow: 0 2px 8px rgba(0, 114, 255, 0.2);
 }
 
-.carousel-btn:disabled {
+.btn-carrossel:disabled {
     opacity: 0.35;
     cursor: default;
     pointer-events: none;
 }
 
-/* ── Responsive ─────────────────────────────────────────────── */
+/* ── Responsividade ─────────────────────────────────────────── */
 
 @media (max-width: 900px) {
     .store-container {
         padding: 32px 24px 48px;
     }
 
-    .products-carousel .product-card {
+    .carrossel-produtos .product-card {
         flex: 0 0 180px;
         min-width: 180px;
     }
@@ -136,13 +136,13 @@
         font-size: 1.7rem;
     }
 
-    .carousel-btn {
+    .btn-carrossel {
         width: 36px;
         height: 36px;
         font-size: 1.4rem;
     }
 
-    .products-carousel .product-card {
+    .carrossel-produtos .product-card {
         flex: 0 0 160px;
         min-width: 160px;
     }

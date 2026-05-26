@@ -1,0 +1,149 @@
+/* ── Store Page ────────────────────────────────────────────── */
+
+.store-container {
+    flex: 1;
+    padding: 48px 60px 64px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.store-container > h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--deep-ocean);
+    margin: 0 0 6px;
+    letter-spacing: -0.5px;
+}
+
+.store-container > p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: 0 0 48px;
+}
+
+/* ── Category section ───────────────────────────────────────── */
+
+.store-container section {
+    margin-bottom: 56px;
+}
+
+.section-header {
+    margin-bottom: 18px;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--deep-ocean);
+    margin: 0 0 4px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ── Carousel ──────────────────────────────────────────────── */
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.products-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    flex: 1;
+    padding: 16px 6px;
+}
+
+.products-carousel .product-card {
+    flex: 0 0 220px;
+    min-width: 220px;
+    scroll-snap-align: start;
+}
+
+/* ── Carousel nav buttons ───────────────────────────────────── */
+
+.carousel-btn {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--glass-shadow);
+    color: var(--aurora-blue);
+    font-size: 1.7rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    padding: 0;
+    user-select: none;
+}
+
+.carousel-btn:hover {
+    background: linear-gradient(to bottom, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    border-color: rgba(0, 114, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 114, 255, 0.35);
+    transform: scale(1.08);
+}
+
+.carousel-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 8px rgba(0, 114, 255, 0.2);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+    .store-container {
+        padding: 32px 24px 48px;
+    }
+
+    .products-carousel .product-card {
+        flex: 0 0 180px;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .store-container {
+        padding: 24px 16px 40px;
+    }
+
+    .store-container > h1 {
+        font-size: 1.7rem;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.4rem;
+    }
+
+    .products-carousel .product-card {
+        flex: 0 0 160px;
+        min-width: 160px;
+    }
+}

@@ -14,6 +14,126 @@
     <main class="quote-container">
         <h1>Orçamento</h1>
         <p>Solicite um orçamento personalizado para os nossos produtos e serviços.</p>
+        <section class="formulario-orcamento">
+            <h2>Formulário de Orçamento</h2>
+            <form id="form-orcamento" action="/enviar-orcamento" method="POST">
+    
+                <input type="radio" name="etapa_wizard" id="passo1" checked style="display:none;">
+                <input type="radio" name="etapa_wizard" id="passo2" style="display:none;">
+                <input type="radio" name="etapa_wizard" id="passo3" style="display:none;">
+
+                <input type="radio" id="obj_conserto" name="objetivo" value="conserto" checked style="display:none;">
+                <input type="radio" id="obj_manutencao" name="objetivo" value="manutencao" style="display:none;">
+                <input type="radio" id="obj_upgrade" name="objetivo" value="upgrade" style="display:none;">
+                <input type="radio" id="obj_software" name="objetivo" value="software" style="display:none;">
+
+                <nav class="form-tabs">
+                    <label for="passo1" class="tab">Dispositivo</label>
+                    <label for="passo2" class="tab">Serviço</label>
+                    <label for="passo3" class="tab">Contato</label>
+                </nav>
+
+                <div class="abas-wrapper">
+                    
+                    <fieldset class="etapa-conteudo" id="conteudo-passo1">
+                        <legend>Identificação do Aparelho</legend>
+                        
+                        <label for="tipo_aparelho">Qual é o seu dispositivo?</label>
+                        <select id="tipo_aparelho" name="tipo_aparelho">
+                            <option value="">Selecione...</option>
+                            <option value="computador">Computador / Desktop</option>
+                            <option value="notebook">Notebook</option>
+                            <option value="celular">Celular / Smartphone</option>
+                            <option value="videogame">Videogame / Console</option>
+                        </select>
+
+                        <p style="font-weight: 600; font-size: 0.9rem; margin-top: 15px; margin-bottom: 8px;">O que você deseja fazer?</p>
+                        
+                        <div class="opcoes-objetivo">
+                            <label for="obj_conserto" class="label-objetivo"> Consertar um Defeito</label>
+                            <label for="obj_manutencao" class="label-objetivo"> Limpeza / Manutenção</label>
+                            <label for="obj_upgrade" class="label-objetivo"> Upgrade / Montagem</label>
+                            <label for="obj_software" class="label-objetivo"> Desbloqueio / Software</label>
+                        </div>
+
+                        <label for="passo2" class="botao-avancar">Avançar</label>
+                    </fieldset>
+
+                    <fieldset class="etapa-conteudo" id="conteudo-passo2">
+                        <legend>Detalhes do Serviço</legend>
+
+                        <div class="sub-etapa" id="sub-conserto">
+                            <label for="tipo_defeito">Sintoma Principal do Defeito:</label>
+                            <select id="tipo_defeito" name="tipo_defeito">
+                                <option value="">Selecione...</option>
+                                <option value="nao_liga">Não liga / Sem sinal</option>
+                                <option value="tela_quebrada">Tela quebrada / Rachada</option>
+                                <option value="bateria">Bateria não segura carga</option>
+                                <option value="outro">Outro problema</option>
+                            </select>
+
+                            <label for="descricao_defeito">Descreva o que aconteceu:</label>
+                            <textarea id="descricao_defeito" name="descricao_defeito" rows="3" placeholder="Ex: Parou de dar vídeo após uma queda..."></textarea>
+                        </div>
+
+                        <div class="sub-etapa" id="sub-manutencao">
+                            <label>Quais serviços de manutenção preventiva você precisa?</label>
+                            <div class="grupo-checkbox">
+                                <input type="checkbox" id="limp_interna" name="servicos_manutencao" value="limpeza_interna">
+                                <label for="limp_interna">Limpeza Interna Completa (Remoção de poeira)</label>
+                                <br>
+                                <input type="checkbox" id="pasta_termica" name="servicos_manutencao" value="pasta_termica">
+                                <label for="pasta_termica">Troca de Pasta Térmica de Alta Performance</label>
+                                <br>
+                                <input type="checkbox" id="otimizacao" name="servicos_manutencao" value="otimizacao_sistema">
+                                <label for="otimizacao">Otimização de Sistema / Formatação Limpa</label>
+                            </div>
+                        </div>
+
+                        <div class="sub-etapa" id="sub-upgrade">
+                            <label for="pecas_upgrade">Quais peças você deseja instalar ou montar?</label>
+                            <textarea id="pecas_upgrade" name="pecas_upgrade" rows="3" placeholder="Ex: Quero trocar o HD por um SSD e adicionar 16GB de RAM..."></textarea>
+                            
+                            <label for="marca_modelo">Marca e Modelo do Aparelho Atual (Se aplicável):</label>
+                            <input type="text" id="marca_modelo" name="marca_modelo" placeholder="Ex: Dell Inspiron 15">
+                        </div>
+
+                        <div class="sub-etapa" id="sub-software">
+                            <label for="servico_software">Qual o serviço de sistema/software desejado?</label>
+                            <select id="servico_software" name="servico_software">
+                                <option value="">Selecione...</option>
+                                <option value="desbloqueio">Desbloqueio / Custom Firmware (Consoles)</option>
+                                <option value="backup">Backup de Dados / Recuperação de Arquivos</option>
+                                <option value="instalacao_os">Instalação de Sistema Operacional</option>
+                                <option value="remocao_virus">Remoção de Vírus e Malwares</option>
+                            </select>
+                        </div>
+
+                        <div class="container-upload">
+                            <p class="titulo-upload">Anexar Imagem ou Foto de Referência (Opcional):</p>
+                            <input type="file" id="foto_defeito" name="foto_defeito" accept="image/*" style="display: none;">
+                            <label for="foto_defeito" class="upload-area-botao">
+                                Enviar Arquivo / Imagem
+                            </label>
+                            <span class="upload-aviso">Formatos aceitos: JPG, PNG. Máx 5MB.</span>
+                        </div>
+
+                        <label for="passo3" class="botao-avancar" style="margin-top: 20px;">Avançar</label>
+                    </fieldset>
+
+                    <fieldset class="etapa-conteudo" id="conteudo-passo3">
+                        <legend>Dados de Contato</legend>
+                        <label for="nome_cliente">Seu Nome:</label>
+                        <input type="text" id="nome_cliente" name="nome_cliente">
+
+                        <label for="email_cliente">Seu E-mail:</label>
+                        <input type="email" id="email_cliente" name="email_cliente">
+
+                        <button type="submit" class="botao-enviar">Solicitar Orçamento</button>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
     </main>
     <footer-component></footer-component>
 </body>

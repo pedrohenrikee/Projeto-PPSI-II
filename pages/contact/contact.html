@@ -14,6 +14,34 @@
     <main class="contact-container">
         <h1>Contato</h1>
         <p>Entre em contato conosco através do formulário abaixo ou pelos nossos canais de atendimento.</p>
+        <section class="formulario-contato">
+            <h2>Formulário de Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="canais-atendimento">
+            <h2>Canais de Atendimento</h2>
+            <p>Email:
+                <a href="mailto:contato@worldmicro.com">contato@worldmicro.com</a>
+            </p>
+        </section>
+
+        <section class="outros-contatos">
+            <h2>Outros Contatos</h2>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+        </section>
     </main>
     <footer-component></footer-component>
 </body>

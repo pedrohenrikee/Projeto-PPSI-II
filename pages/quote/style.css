@@ -72,7 +72,7 @@
     display: none;
 }
 
-/* --- LOGICA CORRIGIDA: MAPEAMENTO DOS PASSOS --- */
+/* --- Mapeamento dos Passos --- */
 #passo1:checked ~ .abas-wrapper #conteudo-passo1,
 #passo2:checked ~ .abas-wrapper #conteudo-passo2,
 #passo3:checked ~ .abas-wrapper #conteudo-passo3 {
@@ -157,35 +157,8 @@ textarea:focus {
     vertical-align: middle;
 }
 
-.botao-avancar {
-    display: inline-block;
+.formulario-orcamento .aero-btn-sm {
     margin-top: 25px;
-    text-align: center;
-    text-decoration: none;
-    background: linear-gradient(to bottom, #6ee7f7 0%, #00c6ff 30%, #0072ff 70%, #005fd4 100%);
-    color: #fff !important;
-    border: 1px solid rgba(0, 80, 200, 0.5);
-    border-radius: 22px;
-    padding: 9px 28px !important;
-    font-weight: 700;
-    font-size: 0.88rem;
-    cursor: pointer;
-    letter-spacing: 0.4px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.6),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.18),
-        0 4px 12px rgba(0, 114, 255, 0.4);
-    transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.12s ease;
-}
-
-.botao-avancar:hover {
-    background: linear-gradient(to bottom, #92f0ff 0%, #33d9ff 30%, #0090ff 70%, #0077e6 100%);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.7),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.12),
-        0 7px 20px rgba(0, 168, 255, 0.5);
-    transform: translateY(-2px);
 }
 
 .botao-enviar {
@@ -273,7 +246,7 @@ textarea:focus {
     animation: fadeInAero 0.3s ease-in-out;
 }
 
-/* --- LOGICA CORRIGIDA: MAPEAMENTO DAS SUB-ETAPAS CONDICIONAIS --- */
+/* --- Sub-etapas Condicionais --- */
 #obj_conserto:checked ~ .abas-wrapper #sub-conserto,
 #obj_manutencao:checked ~ .abas-wrapper #sub-manutencao,
 #obj_upgrade:checked ~ .abas-wrapper #sub-upgrade,
@@ -341,7 +314,7 @@ textarea:focus {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- MEDIA QUERIES --- */
+/* --- Responsividade --- */
 @media (max-width: 768px) {
     .quote-container {
         margin: 20px 16px;

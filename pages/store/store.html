@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
+    <title>World Micro | Loja</title>
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="./style.css">
     <script src="../../js/components/header.js" defer></script>
@@ -16,15 +16,15 @@
         <h1>Nossa Loja</h1>
         <p>Explore nossa variedade de produtos e encontre o que você precisa.</p>
 
-        <!-- Informatica -->
+        <!-- Informática -->
         <section class="informatica">
-            <div class="section-header">
+            <div class="cabecalho-secao">
                 <h2>Informática</h2>
                 <p>Computadores, acessórios, periféricos e muito mais para atender às suas necessidades tecnológicas.</p>
             </div>
-            <div class="carousel-wrapper">
-                <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
-                <div class="products-carousel">
+            <div class="carrossel-wrapper">
+                <button class="btn-carrossel btn-anterior" aria-label="Anterior">&#8249;</button>
+                <div class="carrossel-produtos">
                     <div class="product-card aero-card">
                         <img src="../../assets/store-pics/razer-teclado.jpg" alt="Teclado Razer">
                         <h3>Teclado Razer</h3>
@@ -56,19 +56,19 @@
                         <button class="aero-btn-sm">Adicionar</button>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>
+                <button class="btn-carrossel btn-proximo" aria-label="Próximo">&#8250;</button>
             </div>
         </section>
 
-        <!-- Eletronicos -->
+        <!-- Eletrônicos -->
         <section class="eletronicos">
-            <div class="section-header">
+            <div class="cabecalho-secao">
                 <h2>Eletrônicos</h2>
                 <p>Explore nossa variedade de eletrônicos, desde dispositivos móveis até equipamentos de áudio e vídeo.</p>
             </div>
-            <div class="carousel-wrapper">
-                <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
-                <div class="products-carousel">
+            <div class="carrossel-wrapper">
+                <button class="btn-carrossel btn-anterior" aria-label="Anterior">&#8249;</button>
+                <div class="carrossel-produtos">
                     <div class="product-card aero-card">
                         <img src="../../assets/store-pics/mouse-razer.jpg" alt="Mouse Razer">
                         <h3>Mouse Razer</h3>
@@ -100,19 +100,19 @@
                         <button class="aero-btn-sm">Adicionar</button>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>
+                <button class="btn-carrossel btn-proximo" aria-label="Próximo">&#8250;</button>
             </div>
         </section>
 
-        <!-- Games -->
-        <section class="games">
-            <div class="section-header">
-                <h2>Games</h2>
+        <!-- Jogos -->
+        <section class="jogos">
+            <div class="cabecalho-secao">
+                <h2>Jogos</h2>
                 <p>Descubra nossos jogos, consoles e acessórios para uma experiência de entretenimento completa.</p>
             </div>
-            <div class="carousel-wrapper">
-                <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
-                <div class="products-carousel">
+            <div class="carrossel-wrapper">
+                <button class="btn-carrossel btn-anterior" aria-label="Anterior">&#8249;</button>
+                <div class="carrossel-produtos">
                     <div class="product-card aero-card">
                         <img src="../../assets/store-pics/xbox-x.jpg" alt="Game Xbox X">
                         <h3>Game Xbox X</h3>
@@ -144,7 +144,7 @@
                         <button class="aero-btn-sm">Adicionar</button>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-next" aria-label="Próximo">&#8250;</button>
+                <button class="btn-carrossel btn-proximo" aria-label="Próximo">&#8250;</button>
             </div>
         </section>
     </main>
@@ -152,10 +152,10 @@
     <footer-component></footer-component>
 
     <script>
-        document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-            const carousel = wrapper.querySelector('.products-carousel');
-            const prevBtn  = wrapper.querySelector('.carousel-prev');
-            const nextBtn  = wrapper.querySelector('.carousel-next');
+        document.querySelectorAll('.carrossel-wrapper').forEach(wrapper => {
+            const carousel = wrapper.querySelector('.carrossel-produtos');
+            const prevBtn  = wrapper.querySelector('.btn-anterior');
+            const nextBtn  = wrapper.querySelector('.btn-proximo');
             const STEP     = 240;
 
             function updateButtons() {

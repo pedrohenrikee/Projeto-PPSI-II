@@ -15,10 +15,10 @@ O tema do site é voltado para uma **loja de eletrônicos**, focando em:
 * **Venda de dispositivos eletrônicos** em geral e acessórios (como celulares, fones, caixas de som, capas de celular, gabinetes, etc.).
 
 ### Objetivos do Projeto
-O principal intuito é oferecer um protótipo de site em HTML/CSS visualmente agradável e dinâmico para o usuário[cite: 6]. [cite_start]O foco está em facilitar a navegação e simplificar os processos de compra, agendamento e consulta.
+O principal intuito é oferecer um protótipo de site em HTML/CSS visualmente agradável e dinâmico para o usuário. O foco está em facilitar a navegação e simplificar os processos de compra, agendamento e consulta.
 
 ### Público-alvo
-[cite_start]O projeto foi desenvolvido para atender a necessidade de pessoas que buscam por suporte técnico e ajuda de fácil acesso[cite: 7].
+O projeto foi desenvolvido para atender a necessidade de pessoas que buscam por suporte técnico e ajuda de fácil acesso.
 
 ---
 
@@ -34,20 +34,30 @@ O site é composto pelas abas: **Home, Loja, Serviços, Orçamento, Sobre e Cont
   * Benefícios.
 * **Loja:**
   * Informática;
-  * [cite_start]Eletrônicos[cite: 11];
-  * [cite_start]Jogos[cite: 11].
+  * Eletrônicos;
+  * Jogos.
 * **Serviços:**
-  * [cite_start]Nossos Serviços[cite: 12];
-  * [cite_start]Assistência Técnica[cite: 12];
-  * [cite_start]Consultoria Técnica[cite: 12].
+  * Nossos Serviços;
+  * Assistência Técnica;
+  * Consultoria Técnica.
 * **Orçamento:**
-  * [cite_start]*Formulário de Orçamento:* [cite: 13]
-    * **Dispositivo:** Qual seu dispositivo? [cite_start]/ O que deseja fazer? [cite: 13]
-    * [cite_start]**Serviço:** Info 1. / Info 2. [cite: 13]
-    * **Contato:** Seu nome; [cite_start]/ Seu e-mail[cite: 13, 14].
+  * *Formulário de Orçamento:* 
+    * **Dispositivo:** Qual seu dispositivo? / O que deseja fazer? 
+    * **Serviço:** Info 1. / Info 2. 
+    * **Contato:** Seu nome; / Seu e-mail.
 * **Sobre:**
-  * [cite_start]Nossa História[cite: 15].
+  * Nossa História.
 * **Contato:**
-  * [cite_start]*Formulário de Contato:* Nome, e-mail e Mensagem[cite: 17].
-  * [cite_start]*Canais de Atendimento:* E-mail para contato[cite: 17].
-  * [cite_start]*Outros contatos:* Telefone e Endereço[cite: 17].
+  * *Formulário de Contato:* Nome, e-mail e Mensagem.
+  * *Canais de Atendimento:* E-mail para contato.
+  * *Outros contatos:* Telefone e Endereço.
+ 
+  ---
+
+## Tecnologia Utilizada
+
+### 
+* **HTML5**
+* **JavaScript**
+* **CSS3**
+* **Chat GPT (Desenvolvimento de imagens)**

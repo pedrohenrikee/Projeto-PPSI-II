@@ -52,10 +52,9 @@ O site é composto pelas abas: **Home, Loja, Serviços, Orçamento, Sobre e Cont
   * *Canais de Atendimento:* E-mail para contato.
   * *Outros contatos:* Telefone e Endereço.
  
-  ---
+---
 
 ## Tecnologia Utilizada
-
 ### 
 * **HTML5**
 * **JavaScript**

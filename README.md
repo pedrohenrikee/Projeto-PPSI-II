@@ -67,71 +67,28 @@ O site é composto pelas abas: **Home, Loja, Serviços, Orçamento, Sobre e Cont
 
 ```text
 projeto/
-├── .github/                  # Configurações de CI/CD e workflows
-│   └── workflows/
-│       └── ci.yml
+├── assets/
+│   ├── cpu.jpg             # Imagens utilizadas no sistema
+│   └── storepics/
+│       └── ps5.jpg
 │
-├── docs/                     # Documentação do projeto
-│   ├── arquitetura/
-│   ├── api/
-│   └── diagramas/
+├── doc/                     # Documentação do projeto 
 │
-├── public/                   # Arquivos públicos/estáticos
-│   ├── images/
-│   ├── icons/
+├── js/                      # Javascript
+│   ├── components/
 │   └── fonts/
+│ 
+├── pages/                   # Páginas do sistema
+│   ├── about/
+│   ├── contact/
+│   ├── quote/
+│   ├── service/
+│   └── store/
 │
-├── src/                      # Código-fonte principal
-│   ├── assets/               # Recursos estáticos internos
-│   │   ├── images/
-│   │   ├── styles/
-│   │   └── fonts/
-│   │
-│   ├── components/           # Componentes reutilizáveis
-│   │   ├── ui/
-│   │   ├── layout/
-│   │   └── forms/
-│   │
-│   ├── pages/                # Páginas/telas da aplicação
-│   │   ├── Home/
-│   │   ├── Dashboard/
-│   │   └── Login/
-│   │
-│   ├── services/             # Integrações externas e APIs
-│   │   ├── api/
-│   │   ├── auth/
-│   │   └── storage/
-│   │
-│   ├── hooks/                # Hooks/custom hooks
-│   │
-│   ├── context/              # Providers e contextos globais
-│   │
-│   ├── store/                # Gerenciamento de estado
-│   │
-│   ├── routes/               # Configuração de rotas
-│   │
-│   ├── utils/                # Funções utilitárias
-│   │
-│   ├── constants/            # Constantes globais
-│   │
-│   ├── types/                # Tipagens/interfaces
-│   │
-│   ├── config/               # Configurações da aplicação
-│   │
-│   ├── tests/                # Testes automatizados
-│   │   ├── unit/
-│   │   ├── integration/
-│   │   └── e2e/
-│   │
-│   ├── App.tsx               # Componente raiz
-│   └── main.tsx              # Entrada principal da aplicação
+├── styles/                   # Estilo global
 │
-├── .env                      # Variáveis de ambiente
-├── .gitignore
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
+├── index.html
 ├── README.md
-└── docker-compose.yml
+└── style.css
 ###
 * **

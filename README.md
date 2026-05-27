@@ -63,6 +63,75 @@ O site é composto pelas abas: **Home, Loja, Serviços, Orçamento, Sobre e Cont
 
 ---
 
-## Estrutura de Pastas
+# 📁 Arquitetura de Pastas do Projeto
+
+```text
+projeto/
+├── .github/                  # Configurações de CI/CD e workflows
+│   └── workflows/
+│       └── ci.yml
+│
+├── docs/                     # Documentação do projeto
+│   ├── arquitetura/
+│   ├── api/
+│   └── diagramas/
+│
+├── public/                   # Arquivos públicos/estáticos
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+├── src/                      # Código-fonte principal
+│   ├── assets/               # Recursos estáticos internos
+│   │   ├── images/
+│   │   ├── styles/
+│   │   └── fonts/
+│   │
+│   ├── components/           # Componentes reutilizáveis
+│   │   ├── ui/
+│   │   ├── layout/
+│   │   └── forms/
+│   │
+│   ├── pages/                # Páginas/telas da aplicação
+│   │   ├── Home/
+│   │   ├── Dashboard/
+│   │   └── Login/
+│   │
+│   ├── services/             # Integrações externas e APIs
+│   │   ├── api/
+│   │   ├── auth/
+│   │   └── storage/
+│   │
+│   ├── hooks/                # Hooks/custom hooks
+│   │
+│   ├── context/              # Providers e contextos globais
+│   │
+│   ├── store/                # Gerenciamento de estado
+│   │
+│   ├── routes/               # Configuração de rotas
+│   │
+│   ├── utils/                # Funções utilitárias
+│   │
+│   ├── constants/            # Constantes globais
+│   │
+│   ├── types/                # Tipagens/interfaces
+│   │
+│   ├── config/               # Configurações da aplicação
+│   │
+│   ├── tests/                # Testes automatizados
+│   │   ├── unit/
+│   │   ├── integration/
+│   │   └── e2e/
+│   │
+│   ├── App.tsx               # Componente raiz
+│   └── main.tsx              # Entrada principal da aplicação
+│
+├── .env                      # Variáveis de ambiente
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── README.md
+└── docker-compose.yml
 ###
 * **

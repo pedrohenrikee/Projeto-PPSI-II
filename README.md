@@ -54,7 +54,7 @@ O site é composto pelas abas: **Home, Loja, Serviços, Orçamento, Sobre e Cont
  
 ---
 
-## Tecnologia Utilizada
+## 👨‍💻Tecnologia Utilizada
 ### 
 * **HTML5**
 * **JavaScript**

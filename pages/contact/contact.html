@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="../../js/components/header.js" defer></script>
     <script src="../../js/components/footer.js" defer></script>
+    <script src="../../js/contact.js"></script>
 </head>
 <body>
     <header-component></header-component>
@@ -15,8 +16,9 @@
         <h1>Contato</h1>
         <p>Entre em contato conosco através do formulário abaixo ou pelos nossos canais de atendimento.</p>
         <section class="formulario-contato">
+            
             <h2>Formulário de Contato</h2>
-            <form action="#" method="post">
+            <form action="https://wa.me/5511999999999" id="contato-whatsapp" method="post">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -26,7 +28,8 @@
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <input type="hidden" name="text" value="" id="mensagem-completa" >
+                <button type="submit" onclick="enviarMensagem()">Enviar</button>
             </form>
         </section>
 

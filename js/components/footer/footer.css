@@ -1,0 +1,101 @@
+/* --- Novo Design do Footer --- */
+.main-footer {
+  background-color: var(--deep-ocean);
+  color: #ffffff;
+  padding: 3rem 2rem 1.5rem 2rem;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+.footer-column h3 {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-column p {
+  margin: 0.5rem 0;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-column ul li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: var(--primary-blue);
+}
+
+.btn-footer-contact {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: linear-gradient(to bottom, var(--primary-blue) 0%, var(--aurora-blue) 100%);
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 114, 255, 0.3);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-footer-contact:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(to bottom, var(--frutiger-green) 0%, var(--eco-lime) 100%);
+  box-shadow: 0 6px 15px rgba(33, 140, 116, 0.4);
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--primary-blue);
+}

@@ -1,7 +1,7 @@
 # PROJETO PPSI – WEB SITE
 ## SISTEMAS PARA INTERNET – 2° SEMESTRE
 
-**Alunos:** PEDRO HENRIQUE ALVES LIMA, VINICIUS FARIA  
+**Alunos:** PEDRO HENRIQUE ALVES LIMA, VINICIUS RODRIGUES FIGUEIRA DE FARIA  
 **Professor(a):** VITOR SILVÉRIO 
 **Instituição:** FATEC Dr. Bernardino de Campos – SÃO ROQUE 
 
@@ -59,7 +59,19 @@ O site é composto pelas abas: **Home, Loja, Serviços, Orçamento, Sobre e Cont
 * **HTML5**
 * **JavaScript**
 * **CSS3**
-* **Chat GPT (Desenvolvimento de imagens)**
+* **Chat GPT**
+
+---
+
+## 👨‍💻Dados de Acessibilidade
+### 
+* **Home**
+* **Loja**
+* **Serviços**
+* **Orçamento**
+* **Sobre**
+* **Contato**
+
 
 ---
 

@@ -32,7 +32,7 @@ class MainFooter extends HTMLElement {
             <p>R. Antônio Zecchi, 284 — Centro</p>
             <p>Mairinque/SP — CEP: 18120-000</p>
             <p class="footer-email">worldmicro@gmail.com</p>
-            <p>World Micro Group LTDA</p>
+            <p>WORLD MICRO GROUP LTDA</p>
             <p>11.556.286/0001-87</p>
           </div>
 

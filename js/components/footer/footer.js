@@ -2,7 +2,7 @@ class MainFooter extends HTMLElement {
   connectedCallback() {
     const inPages = window.location.pathname.includes('/pages/');
     const prefix = inPages ? '../' : './pages/';
-    const cssPrefix = inPages ? '../../js/components/footer/footer.css' : './js/components/footer/footer.css';
+    const cssPrefix = inPages ? '../../styles/footer.css' : './styles/footer.css';
 
     this.innerHTML = `
       <link rel="stylesheet" href="${cssPrefix}">

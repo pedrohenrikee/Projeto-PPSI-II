@@ -213,3 +213,9 @@ O projeto foi projetado com forte consideração a boas práticas de usabilidade
 * **Foco no Teclado:** Elementos interativos como botões de navegação, abas e links possuem transições de borda de contraste nítidas ao receber o foco do cursor ou navegação por tabulação.
 * **Semântica Nítida:** Uso correto de cabeçalhos hierárquicos (apenas um `<h1>` por página, seguido sequencialmente por `<h2>` e `<h3>`).
 * **Contraste de Cores Elevado:** As variáveis do Design System baseadas na paleta azul escura (`--deep-ocean`) e branca semitranslúcida garantem legibilidade excelente, atendendo a altos parâmetros de contraste exigidos para pessoas com dificuldades visuais.
+
+---
+
+## 🪪 Licenças
+
+Todas as imagens presentes neste projeto foram tiradas do banco de imagens gratuito **Unplash** ou geradas pela ferramenta de IA **ChatGPT**.

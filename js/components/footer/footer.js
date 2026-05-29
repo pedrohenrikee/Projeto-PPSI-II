@@ -38,7 +38,7 @@ class MainFooter extends HTMLElement {
         <hr class="footer-divider">
 
         <div class="footer-bottom">
-          <p>&copy; ${new Date().getFullYear()} World Micro. Todos os direitos reservados. - CNPJ: 12.632.98/0001-20</p>
+          <p>&copy; ${new Date().getFullYear()} World Micro. Todos os direitos reservados. CNPJ: 12.632.98/0001-20</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/WorldmicroInformaticaEletronicos/?locale=pt_BR" target="_blank" aria-label="Facebook">Facebook</a>
             <a href="https://www.instagram.com/worldmicroinformatica/" target="_blank" aria-label="Instagram">Instagram</a>

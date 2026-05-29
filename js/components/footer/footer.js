@@ -8,6 +8,7 @@ class MainFooter extends HTMLElement {
           <div class="footer-column">
             <h3>Atendimento</h3>
             <p class="footer-time">08:00 às 18:00 — Segunda a Sexta</p>
+            <p class="footer-time">08:00 às 12:00 — Sábados</p>
             <p class="footer-time">Horário de Brasília</p>
             <a href="../../../pages/contact/contact.html" class="btn-footer-contact">Fale Conosco</a>
           </div>
@@ -26,7 +27,7 @@ class MainFooter extends HTMLElement {
             <h3>Nossa Loja</h3>
             <p>R. Antônio Zecchi, 284 — Centro</p>
             <p>Mairinque/SP — CEP: 18120-000</p>
-            <p class="footer-email">worldmicro.info@gmail.com</p>
+            <p class="footer-email">worldmicro@gmail.com</p>
           </div>
 
         </div>

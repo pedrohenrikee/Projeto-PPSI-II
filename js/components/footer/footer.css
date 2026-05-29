@@ -1,7 +1,6 @@
-/* --- Novo Design do Footer --- */
 .main-footer {
   background-color: var(--deep-ocean);
-  color: #ffffff;
+  color: #e2e8f0;
   padding: 3rem 2rem 1.5rem 2rem;
   margin-top: auto;
   width: 100%;
@@ -18,7 +17,7 @@
 }
 
 .footer-column h3 {
-  color: var(--primary-blue);
+  color: #e2e8f0;
   font-size: 1.1rem;
   margin-top: 0;
   margin-bottom: 1.2rem;
@@ -85,12 +84,16 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  color: #94a3b8;
+  color: #e2e8f0;
   font-size: 0.85rem;
 }
 
+.footer-bottom p {
+  color:#e2e8f0;
+}
+
 .footer-socials a {
-  color: #94a3b8;
+  color: #e2e8f0;
   text-decoration: none;
   margin-left: 15px;
   transition: color 0.2s ease;

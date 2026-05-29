@@ -4,10 +4,18 @@ class MainHeader extends HTMLElement {
     const prefix = inPages ? '../' : './pages/';
     const prefixIndex = inPages ? '../../index.html' : './index.html';
     const logoSrc = inPages ? '../../assets/logo.png' : './assets/logo.png';
+    const cssPrefix = inPages ? '../../styles/header.css' : './styles/header.css';
 
     this.innerHTML = `
+      <link rel="stylesheet" href="${cssPrefix}">
       <header>
-        <img src="${logoSrc}" alt="World Micro Logo" style="height: 84px; width: auto; object-fit: contain; margin-right: 10px;">
+        <div class="header-logo">
+          <img src="${logoSrc}" alt="World Micro Logo">
+        </div>
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label for="menu-toggle" class="hamburger-menu">
+          <span></span>
+        </label>
         <nav>
           <a href="${prefixIndex}">Home</a>
           <a href="${prefix}store/store.html">Loja</a>

@@ -44,9 +44,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 80px;
 }
 
-.aero-card, header, footer {
+.aero-card, footer {
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -55,7 +56,7 @@ body {
   border-radius: 16px;
 }
 
-header, footer {
+footer {
   border-radius: 0;
 }
 
@@ -82,35 +83,7 @@ header, footer {
     0 6px 15px rgba(33, 140, 116, 0.4);
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 30px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 0;
-  box-shadow: 0 10px 30px rgba(0, 168, 255, 0.1);
-}
 
-header nav a {
-  text-decoration: none;
-  color: #0a3d62;
-  font-weight: 600;
-  margin: 0 15px;
-  transition: color 0.2s ease;
-}
-
-header nav a:hover {
-  color: #00a8ff;
-}
 
 footer {
   text-align: center;

@@ -369,7 +369,7 @@ a {
     display: block;
     width: 130px;
     height: 130px;
-    background-image: url('../assets/icones_2.png');
+    background-image: url('../assets/icones_2.webp');
     background-size: 300% auto;
     background-repeat: no-repeat;
     filter: drop-shadow(0 4px 10px rgba(0, 114, 255, 0.2));

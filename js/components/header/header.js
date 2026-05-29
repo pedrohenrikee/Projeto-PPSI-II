@@ -3,7 +3,7 @@ class MainHeader extends HTMLElement {
     const inPages = window.location.pathname.includes('/pages/');
     const prefix = inPages ? '../' : './pages/';
     const prefixIndex = inPages ? '../../index.html' : './index.html';
-    const logoSrc = inPages ? '../../assets/logo.png' : './assets/logo.png';
+    const logoSrc = inPages ? '../../assets/logo.webp' : './assets/logo.webp';
     const cssPrefix = inPages ? '../../js/components/header/header.css' : './js/components/header/header.css';
 
     this.innerHTML = `

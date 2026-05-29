@@ -32,13 +32,15 @@ class MainFooter extends HTMLElement {
             <p>R. Antônio Zecchi, 284 — Centro</p>
             <p>Mairinque/SP — CEP: 18120-000</p>
             <p class="footer-email">worldmicro@gmail.com</p>
+            <p>World Micro Group LTDA</p>
+            <p>11.556.286-0001.87</p>
           </div>
 
         </div>
         <hr class="footer-divider">
 
         <div class="footer-bottom">
-          <p>&copy; ${new Date().getFullYear()} World Micro. Todos os direitos reservados. CNPJ: 12.632.98/0001-20</p>
+          <p>&copy; ${new Date().getFullYear()} World Micro. Todos os direitos reservados.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/WorldmicroInformaticaEletronicos/?locale=pt_BR" target="_blank" aria-label="Facebook">Facebook</a>
             <a href="https://www.instagram.com/worldmicroinformatica/" target="_blank" aria-label="Instagram">Instagram</a>

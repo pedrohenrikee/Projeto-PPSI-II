@@ -1,7 +1,11 @@
 class MainFooter extends HTMLElement {
   connectedCallback() {
+    const inPages = window.location.pathname.includes('/pages/');
+    const prefix = inPages ? '../' : './pages/';
+    const cssPrefix = inPages ? '../../js/components/footer/footer.css' : './js/components/footer/footer.css';
+
     this.innerHTML = `
-      <link rel="stylesheet" href="/js/components/footer/footer.css">
+      <link rel="stylesheet" href="${cssPrefix}">
       <footer class="main-footer">
         <div class="footer-container">
           
@@ -10,16 +14,16 @@ class MainFooter extends HTMLElement {
             <p class="footer-time">08:00 às 18:00 — Segunda a Sexta</p>
             <p class="footer-time">08:00 às 12:00 — Sábados</p>
             <p class="footer-time">Horário de Brasília</p>
-            <a href="../../../pages/contact/contact.html" class="btn-footer-contact">Fale Conosco</a>
+            <a href="${prefix}contact/contact.html" class="btn-footer-contact">Fale Conosco</a>
           </div>
 
           <div class="footer-column">
             <h3>Institucional</h3>
             <ul>
-              <li><a href="../../../pages/about/about.html">Sobre a World Micro</a></li>
-              <li><a href="../../../pages/service/service.html">Nossos Serviços</a></li>
-              <li><a href="../../../pages/store/store.html">Nossa Loja</a></li>
-              <li><a href="../../../pages/quote/quote.html">Faça um orçamento</a></li>
+              <li><a href="${prefix}about/about.html">Sobre a World Micro</a></li>
+              <li><a href="${prefix}service/service.html">Nossos Serviços</a></li>
+              <li><a href="${prefix}store/store.html">Nossa Loja</a></li>
+              <li><a href="${prefix}quote/quote.html">Faça um orçamento</a></li>
             </ul>
           </div>
 

@@ -1,22 +1,24 @@
-function enviarMensagem(event) {
-    if (event && event.preventDefault) event.preventDefault()
-    const formulario = document.getElementById("contato-whatsapp")
-    const mensagem_completa = document.getElementById("mensagem-completa")
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contato-whatsapp");
 
-    const name = document.getElementById("name")
-    const email = document.getElementById("email")
-    const message = document.getElementById("message")
+    if (form) {
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
 
-    if (!formulario) return
+            const nome = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensagem = document.getElementById("message").value.trim();
 
-    if (formulario.checkValidity()) {
-        const msg = `Meu nome é ${name.value}. Email: ${email.value}. Mais informações: ${message.value}`
-        mensagem_completa.value = msg
-        const phone = '5511999999999'
-        const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`
+            const numeroWhatsApp = "5511999999999"; 
 
-        window.open(url, '_blank')
-    } else {
-        formulario.reportValidity()
+            const textoMensagem = `Olá, World Micro! Gostaria de solicitar um atendimento:\n\n` +
+                                 `*Nome:* ${nome}\n` +
+                                 `*E-mail:* ${email}\n\n` +
+                                 `*Mensagem:* ${mensagem}`;
+
+            const urlFormatada = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoMensagem)}`;
+
+            window.open(urlFormatada, "_blank");
+        });
     }
-}
+});

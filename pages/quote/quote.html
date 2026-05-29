@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro">
+    <meta name="description" content="Solicite um orçamento sob medida online e rápido com a World Micro. Selecione seu dispositivo (computador, notebook, celular ou videogame), relate o defeito ou serviço desejado e nos envie seus dados.">
+    <meta name="keywords" content="Orçamento Online World Micro, Conserto de Celular Preço, Valor Limpeza PC, Solicitar Orçamento Mairinque, Troca de Tela Orçamento">
     <title>World Micro | Orçamento</title>
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="../../js/components/header.js" defer></script>
-    <script src="../../js/components/footer.js" defer></script>
+    <script src="../../js/components/header/header.js" defer></script>
+    <script src="../../js/components/footer/footer.js" defer></script>
 </head>
 <body>
     <header-component></header-component>
-    <main class="quote-container">
+    <main class="quote-container aero-card">
         <h1>Orçamento</h1>
         <p>Solicite um orçamento personalizado para os nossos produtos e serviços.</p>
         <section class="formulario-orcamento">
@@ -56,7 +59,7 @@
                             <label for="obj_software" class="label-objetivo"> Desbloqueio / Software</label>
                         </div>
 
-                        <label for="passo2" class="aero-btn-sm">Avançar</label>
+                        <label for="passo2" class="aero-btn-sm btn-avancar">Avançar</label>
                     </fieldset>
 
                     <fieldset class="etapa-conteudo" id="conteudo-passo2">
@@ -118,7 +121,7 @@
                             <span class="upload-aviso">Formatos aceitos: JPG, PNG. Máx 5MB.</span>
                         </div>
 
-                        <label for="passo3" class="aero-btn-sm">Avançar</label>
+                        <label for="passo3" class="aero-btn-sm btn-avancar">Avançar</label>
                     </fieldset>
 
                     <fieldset class="etapa-conteudo" id="conteudo-passo3">
@@ -129,7 +132,7 @@
                         <label for="email_cliente">Seu E-mail:</label>
                         <input type="email" id="email_cliente" name="email_cliente">
 
-                        <button type="submit" class="botao-enviar">Solicitar Orçamento</button>
+                        <button type="submit" class="aero-btn-sm botao-enviar">Solicitar Orçamento</button>
                     </fieldset>
                 </div>
             </form>

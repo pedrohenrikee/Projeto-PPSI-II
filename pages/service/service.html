@@ -3,25 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro">
+    <meta name="description" content="Explore nossos serviços técnicos especializados: manutenção e formatação de computadores e notebooks, limpeza avançada com troca de pasta térmica, upgrades de SSD/RAM, conserto de videogames e recuperação de dados.">
+    <meta name="keywords" content="Serviços World Micro, Limpeza de Computador Mairinque, Upgrade Notebook SSD, Conserto PC, Assistência Técnica Gamer, Conserto Videogames">
     <title>World Micro | Serviços</title>
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="../../js/components/header.js" defer></script>
-    <script src="../../js/components/footer.js" defer></script>
+    <script src="../../js/components/header/header.js" defer></script>
+    <script src="../../js/components/footer/footer.js" defer></script>
 </head>
 <body>
     <header-component></header-component>
-    <main class="service-container">
-        <h1>Nossos Serviços</h1>
-        <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades tecnológicas...</p>
-        <section class="assistencia-tecnica">
-            <h2>Assistência Técnica</h2>
-            <p>Reparos, manutenção e suporte técnico para garantir que seus dispositivos estejam sempre funcionando.</p>
-
+    <main class="service-page">
+        <section class="service-hero aero-card">
+            <h1>Nossos Serviços</h1>
+            <p class="subtitle">Cuidado e manutenção especializada para os seus aparelhos funcionarem como novos.</p>
         </section>
-        <section class="consultoria-tecnica">
-            <h2>Consultoria Técnica</h2>
-            <p>Oferecemos consultoria especializada para ajudar você a tomar decisões informadas sobre seus equipamentos e soluções tecnológicas.</p>
+
+        <section class="service-category">
+            <div class="category-header">
+                <h2>Serviços de Oficina</h2>
+                <p>Deixamos seu computador, notebook ou videogame rápido e bem cuidado.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card aero-card">
+                    <div class="aero-sphere service-icon-sphere icon-hardware"></div>
+                    <h3>Manutenção de Computadores e Notebooks</h3>
+                    <p>Troca de telas quebradas, teclados, baterias, conserto de conectores e formatação completa com instalação de antivírus.</p>
+                    <a href="../quote/quote.html" class="aero-btn-sm">Pedir Orçamento</a>
+                </div>
+
+                <div class="service-card aero-card">
+                    <div class="aero-sphere service-icon-sphere icon-clean"></div>
+                    <h3>Limpeza Completa e Troca de Pasta Térmica</h3>
+                    <p>Remoção de poeira interna, lubrificação dos coolers e troca da pasta térmica para evitar que seu aparelho esquente ou fique travando.</p>
+                    <a href="../quote/quote.html" class="aero-btn-sm">Pedir Orçamento</a>
+                </div>
+
+                <div class="service-card aero-card">
+                    <div class="aero-sphere service-icon-sphere icon-setup"></div>
+                    <h3>Montagem de Computadores sob Medida</h3>
+                    <p>Ajudamos você a escolher as melhores peças para o seu bolso. Montamos computadores para jogos, estudos ou trabalho com organização dos cabos.</p>
+                    <a href="../quote/quote.html" class="aero-btn-sm">Pedir Orçamento</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-category">
+            <div class="category-header">
+                <h2>Soluções Especiais e Vendas</h2>
+                <p>Acessórios, peças de qualidade e serviços diferenciados na nossa loja.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card aero-card">
+                    <div class="aero-sphere aero-sphere--eco service-icon-sphere icon-data"></div>
+                    <h3>Recuperação de Arquivos e Fotos</h3>
+                    <p>Perdeu seus documentos ou o HD parou de funcionar? Fazemos a busca e a recuperação de fotos, arquivos e trabalhos importantes.</p>
+                    <a href="../quote/quote.html" class="aero-btn-sm">Pedir Análise</a>
+                </div>
+
+                <div class="service-card aero-card">
+                    <div class="aero-sphere aero-sphere--eco service-icon-sphere icon-game"></div>
+                    <h3>Atualização e Desbloqueio de Videogames</h3>
+                    <p>Serviço especializado para consoles. Fazemos limpeza preventiva, troca de leitor e desbloqueio seguro para você aproveitar o máximo do seu aparelho.</p>
+                    <a href="../quote/quote.html" class="aero-btn-sm">Tirar Dúvidas</a>
+                </div>
+
+                <div class="service-card aero-card">
+                    <div class="aero-sphere aero-sphere--eco service-icon-sphere icon-store"></div>
+                    <h3>Venda de Computadores e Peças</h3>
+                    <p>Temos uma variedade de mouses, teclados, fones de ouvido, roteadores Wi-Fi, pen drives e peças de reposição com garantia de verdade.</p>
+                    <a href="../quote/quote.html" class="aero-btn-sm">Ver Produtos</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer-component></footer-component>

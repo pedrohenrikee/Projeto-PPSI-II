@@ -2,31 +2,23 @@
     max-width: 650px;
     margin: 40px auto;
     padding: 30px;
-    background: var(--glass-bg);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid var(--glass-border);
-    box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 18px;
     box-sizing: border-box;
 }
 
 .quote-container h1 {
-    font-size: 1.8rem;
-    color: var(--deep-ocean);
-    margin-top: 0;
+    font-size: var(--font-h1);
     margin-bottom: 5px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .quote-container p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: var(--font-p);
     margin-bottom: 25px;
 }
 
 .formulario-orcamento h2 {
-    font-size: 1.2rem;
+    font-size: var(--font-h3);
     color: var(--text-main);
     margin-bottom: 15px;
 }
@@ -72,7 +64,6 @@
     display: none;
 }
 
-/* --- Mapeamento dos Passos --- */
 #passo1:checked ~ .abas-wrapper #conteudo-passo1,
 #passo2:checked ~ .abas-wrapper #conteudo-passo2,
 #passo3:checked ~ .abas-wrapper #conteudo-passo3 {
@@ -157,35 +148,15 @@ textarea:focus {
     vertical-align: middle;
 }
 
-.formulario-orcamento .aero-btn-sm {
-    margin-top: 25px;
-}
-
+.btn-avancar,
 .botao-enviar {
     display: block;
-    width: fit-content;
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
     margin-top: 25px;
-    background: linear-gradient(to bottom, #5ce68f 0%, var(--frutiger-green) 35%, #27ae60 70%, #1e8449 100%);
-    color: white;
-    border: 1px solid rgba(39, 174, 96, 0.5);
-    border-radius: 22px;
-    padding: 10px 30px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    cursor: pointer;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        0 4px 12px rgba(60, 208, 112, 0.3);
-    transition: all 0.2s ease;
-}
-
-.botao-enviar:hover {
-    transform: translateY(-2px);
-    background: linear-gradient(to bottom, var(--eco-lime) 0%, #8ca82a 100%);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.6),
-        0 6px 15px rgba(163, 203, 56, 0.4);
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .container-upload {
@@ -233,7 +204,6 @@ textarea:focus {
     transform: translateY(-1px);
 }
 
-
 .upload-aviso {
     display: block;
     font-size: 0.78rem;
@@ -246,7 +216,6 @@ textarea:focus {
     animation: fadeInAero 0.3s ease-in-out;
 }
 
-/* --- Sub-etapas Condicionais --- */
 #obj_conserto:checked ~ .abas-wrapper #sub-conserto,
 #obj_manutencao:checked ~ .abas-wrapper #sub-manutencao,
 #obj_upgrade:checked ~ .abas-wrapper #sub-upgrade,
@@ -298,11 +267,13 @@ textarea:focus {
     border-radius: 8px;
     padding: 15px;
 }
+
 .grupo-checkbox label {
     display: inline-block !important;
     margin: 0 0 10px 8px !important;
     cursor: pointer;
 }
+
 .grupo-checkbox input[type="checkbox"] {
     cursor: pointer;
     transform: scale(1.1);
@@ -314,7 +285,6 @@ textarea:focus {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- Responsividade --- */
 @media (max-width: 768px) {
     .quote-container {
         margin: 20px 16px;
@@ -322,7 +292,7 @@ textarea:focus {
     }
 
     .quote-container h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .tab {
@@ -335,7 +305,7 @@ textarea:focus {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .quote-container {
         margin: 12px 10px;
         padding: 16px;

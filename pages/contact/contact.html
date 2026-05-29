@@ -3,48 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro">
+    <meta name="description" content="Entre em contato com a World Micro em Mairinque/SP. Solicite suporte técnico pelo WhatsApp oficial, envie um e-mail ou visite nossa loja para avaliarmos seu computador ou smartphone.">
+    <meta name="keywords" content="Contato World Micro, WhatsApp Assistência Técnica, Endereço World Micro Mairinque, E-mail comercial World Micro, Horário de funcionamento World Micro">
     <title>World Micro | Contato</title>
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="../../js/components/header.js" defer></script>
-    <script src="../../js/components/footer.js" defer></script>
-    <script src="../../js/contact.js"></script>
+    <script src="../../js/components/header/header.js" defer></script>
+    <script src="../../js/components/footer/footer.js" defer></script>
+    <script src="../../js/contact.js" defer></script>
 </head>
 <body>
     <header-component></header-component>
-    <main class="contact-container">
-        <h1>Contato</h1>
-        <p>Entre em contato conosco através do formulário abaixo ou pelos nossos canais de atendimento.</p>
-        <section class="formulario-contato">
-            
-            <h2>Formulário de Contato</h2>
-            <form action="https://wa.me/5511999999999" id="contato-whatsapp" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <input type="hidden" name="text" value="" id="mensagem-completa" >
-                <button type="submit" onclick="enviarMensagem()">Enviar</button>
-            </form>
+    <main class="contact-page">
+        <section class="contact-hero aero-card">
+            <h1>Fale Conosco</h1>
+            <p class="subtitle">Estamos prontos para ajudar: envie sua dúvida, solicite orçamento ou traga seu equipamento para avaliação.</p>
         </section>
 
-        <section class="canais-atendimento">
-            <h2>Canais de Atendimento</h2>
-            <p>Email:
-                <a href="mailto:contato@worldmicro.com">contato@worldmicro.com</a>
-            </p>
-        </section>
+        <div class="contact-layout">
+            <section class="contact-form-section aero-card">
+                <h2>Fale Conosco</h2>
+                <form id="contato-whatsapp">
+                    <div class="form-group">
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
+                    </div>
 
-        <section class="outros-contatos">
-            <h2>Outros Contatos</h2>
-            <p>Telefone: (11) 1234-5678</p>
-            <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
-        </section>
+                    <div class="form-group">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: joao@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem / Defeito do Aparelho:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Conte-nos brevemente o que aconteceu com seu equipamento..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="aero-btn-sm btn-submit-contact">
+                        Enviar Mensagem via WhatsApp
+                    </button>
+                </form>
+            </section>
+
+            <div class="contact-info-column">
+                <section class="info-box aero-card">
+                    <h2>Canais de Atendimento</h2>
+                    <div class="info-item">
+                        <span class="info-icon text-icon">📧</span>
+                        <div>
+                            <p class="info-title">E-mail Comercial</p>
+                            <a href="mailto:worldmicro@gmail.com" class="link-aero">worldmicro@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon text-icon">💬</span>
+                        <div>
+                            <p class="info-title">WhatsApp Oficial</p>
+                            <p class="info-detail">(11) 99999-9999</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-box aero-card">
+                    <h2>Nossa Loja</h2>
+                    <div class="info-item">
+                        <span class="info-icon text-icon">📍</span>
+                        <div>
+                            <p class="info-title">Endereço</p>
+                            <p>R. Antônio Zecchi, 284 — Centro</p>
+                            <p>Mairinque/SP — CEP: 18120-000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon text-icon">🕒</span>
+                        <div>
+                            <p class="info-title">Horário de Funcionamento</p>
+                            <p class="info-detail">Segunda a Sexta: 08:00 às 18:00</p>
+                            <p class="info-detail">Sábados: 08:00 às 12:00</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <footer-component></footer-component>
 </body>

@@ -4,7 +4,7 @@ class MainHeader extends HTMLElement {
     const prefix = inPages ? '../' : './pages/';
     const prefixIndex = inPages ? '../../index.html' : './index.html';
     const logoSrc = inPages ? '../../assets/logo.png' : './assets/logo.png';
-    const cssPrefix = inPages ? '../../styles/header.css' : './styles/header.css';
+    const cssPrefix = inPages ? '../../js/components/header/header.css' : './js/components/header/header.css';
 
     this.innerHTML = `
       <link rel="stylesheet" href="${cssPrefix}">

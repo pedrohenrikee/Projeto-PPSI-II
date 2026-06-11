@@ -219,3 +219,4 @@ O projeto foi projetado com forte consideração a boas práticas de usabilidade
 ## 🪪 Licenças
 
 Todas as imagens presentes neste projeto foram tiradas do banco de imagens gratuito **Unplash** ou geradas pela ferramenta de IA **ChatGPT**.
+

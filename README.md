@@ -75,6 +75,8 @@ projeto-ppsi-ii/
 │
 ├── js/                      # Lógica JavaScript (Vanilla ES6)
 │   ├── components/          # Componentes web modulares reutilizáveis
+│   │   ├── carrossel/ 
+│   │   │   └── carrossel.js
 │   │   ├── footer/          # Módulo do Rodapé da aplicação
 │   │   │   ├── footer.css   # Estilização isolada do rodapé corporativo
 │   │   │   └── footer.js    # Injetor dinâmico do footer em HTML
